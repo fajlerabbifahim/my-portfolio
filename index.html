@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind connect -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- flowbite connect  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .pry-font {
+        font-family: "Space Grotesk", sans-serif;
+      }
+    </style>
+
+    <!-- primary color  style -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .bg-color {
+          background-color: #fcfcfd;
+        }
+        .second-bg-color {
+          background-color: #b2a1db;
+        }
+        .text-color {
+          color: #0b0a0d;
+        }
+        .pry-btn-color {
+          background-color: #7660ae;
+        }
+        .secondary-txt-color {
+          color: #8c6ed6;
+        }
+      }
+    </style>
+  </head>
+  <body class="pry-font container border border-2 border-red-500 mx-auto">
+    <header class="bg-color">
+      <!-- navbar section  -->
+
+      <nav class="">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <div class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-color"
+              >Fahim
+            </span>
+            <!-- <span class="text-5xl secondary-btn-color">.</span> -->
+          </div>
+
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-white pry-btn-color hover:second-bg-color focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center"
+            >
+              Let's Talk
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 text-lg md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-color"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 md:p-0 text-color">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 md:p-0 text-color"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 md:p-0 text-color"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navbar section end -->
+
+      <!-- hero section  -->
+      <div
+        class="flex flex-col items-center justify-center text-center mt-32 mx-5"
+      >
+        <h4 class="text-xl font-medium">Hi I'm Fahim</h4>
+        <h1 class="text-6xl md:text-7xl font-medium text-color">
+          Front<span class="secondary-txt-color">end</span>
+        </h1>
+        <h1 class="text-7xl md:text-8xl font-medium text-color">
+          <span class="secondary-txt-color">Dev</span>eloper
+        </h1>
+        <p
+          class="max-w-[700px] mt-5 text-color text-sm md:text-base font-medium"
+        >
+          "Creative and detail-oriented web developer with expertise in
+          front-end technologies, building responsive, user-friendly websites,
+          and delivering visually appealing designs with seamless functionality
+          and exceptional performance."
+        </p>
+      </div>
+      <div class="">
+        <div class="flex justify-center items-center gap-8 my-10">
+          <button
+            type="button"
+            class="text-white pry-btn-color hover:second-bg-color focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center"
+          >
+            Download CV
+          </button>
+          <button
+            type="button"
+            class="text-white border border-1 border-[#8c6ed6] secondary-txt-color hover:pry-bg-color focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
